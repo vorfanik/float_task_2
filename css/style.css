@@ -19,15 +19,38 @@ article h1 {
     margin: 0;
 }
 
-img {
-    width: 140px;
+.container {
+    position: relative;
+    width: 120px;
     float: left;
     margin-right: 20px;
-    cursor: zoom-in;
 }
 
-img:hover{
-    filter: brightness(0.7);
+.container img {
+    width: 100%;
+}
+
+.container .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 96%;
+    background: rgba(26, 26, 26, 0.6);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+
+.container:hover .overlay {
+    opacity:1
+}
+
+.container .overlay img {
+    object-fit: contain;
+    width: 50%;
+    position: relative;
+    top: 30%;
+    left: 25%;
 }
 
 p {
@@ -46,7 +69,7 @@ article  {
     padding: 20px;
     border-top: 5px solid #c3c2c2;
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: 0.3s;
 }
 
 article:hover {
