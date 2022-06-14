@@ -35,8 +35,8 @@ p {
 
 
 article  {
-    display: inline-block;
-    width: 351px;
+    float: left;
+    width: 300px;
     height: auto;
     background: white;
     font-family: 'News Cycle', sans-serif;
@@ -50,13 +50,13 @@ article  {
     transition: transform 0.2s;
 }
 
-.inline:hover {
+article:hover {
     transform: translateY(-7px);
     border-top: 5px solid #0974b3;
 }
 
 button {
-    margin-left: 30px;
+    margin-left: 5px;
     width: 250px;
     height: 60px;
     border-radius: 20px 0;
